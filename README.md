@@ -1,6 +1,8 @@
 # Enhanced Calculator
 
-A Java-based Enhanced Calculator developed as part of the ShadowFox Java Development Internship.
+A Java-based console application developed as part of the ShadowFox Java Development Internship. This project performs basic and advanced mathematical calculations through a simple menu-driven interface.
+
+---
 
 ## Features
 
@@ -8,63 +10,110 @@ A Java-based Enhanced Calculator developed as part of the ShadowFox Java Develop
 - Subtraction
 - Multiplication
 - Division
+- Power Calculation
 - Square Root Calculation
-- Power (Exponentiation)
-- Celsius to Fahrenheit Conversion
-- Fahrenheit to Celsius Conversion
-- Division by Zero Handling
-- Invalid Input Handling
-- Menu-Driven Interface
+- Menu-driven interface
+- Handles divide-by-zero exceptions
+
+---
 
 ## Technologies Used
 
-- Java 21
+- Java
+- Maven
 - IntelliJ IDEA
 - Git
 - GitHub
 
-## Concepts Used
-
-- Object-Oriented Programming (OOP)
-- Classes and Objects
-- Methods
-- Switch Case
-- Loops
-- Exception Handling
-- Scanner Class
-- Java Math Class
+---
 
 ## Project Structure
 
 ```
 EnhancedCalculator
 │
-└── src
-    ├── Calculator.java
-    └── Main.java
+├── src
+│   └── com
+│       └── shadowfox
+│           └── calculator
+│               ├── Main.java
+│               └── service
+│                   └── Calculator.java
+│
+├── pom.xml
+├── README.md
+└── .gitignore
 ```
+
+---
+
+## Prerequisites
+
+- JDK 21 or above
+- IntelliJ IDEA
+- Maven
+
+---
 
 ## How to Run
 
-1. Open the project in IntelliJ IDEA.
-2. Run `Main.java`.
-3. Select an operation from the menu.
-4. Enter the required values.
-5. View the result.
-6. Repeat until you choose Exit.
+### Using IntelliJ IDEA
 
-## Sample Operations
+1. Clone or download the repository.
+2. Open the project in IntelliJ IDEA.
+3. Allow Maven to download the required dependencies.
+4. Open **Main.java**.
+5. Click the **Run** button.
+6. Select the desired calculator operation from the menu.
 
-- Addition
-- Subtraction
-- Multiplication
-- Division
-- Square Root
-- Power
-- Temperature Conversion
+---
+
+## Using Maven
+
+Open terminal inside the project folder and run:
+
+```bash
+mvn clean compile
+mvn exec:java
+```
+
+---
+
+## Database Setup
+
+This project is a standalone Java console application and does not require any database setup.
+
+---
+
+## Sample Output
+
+```
+========== ENHANCED CALCULATOR ==========
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Power
+6. Square Root
+7. Exit
+
+Enter your choice:
+```
+
+---
+
+## Future Enhancements
+
+- Scientific Calculator
+- Calculation History
+- GUI using JavaFX or Swing
+- Unit Converter
+- Expression Evaluation
+
+---
 
 ## Author
 
 **Vrushali Patil**
 
-### ShadowFox Java Development Internship
+Developed as part of the **ShadowFox Java Development Internship**.
